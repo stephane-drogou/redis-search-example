@@ -30,7 +30,7 @@ public class RedisOperation {
 
     public String getIndex(String idVoie,Integer pkDebut,Integer pkFin) {
         String index = "idx:voiture";
-        String query = "\"@voie:{"+idVoie+"} @pk:["+pkDebut+" "+pkFin+"]\"";
+        String query = "@voie:{"+idVoie+"} @pk:["+pkDebut+" "+pkFin+"]";
     
         StringBuilder retour = new StringBuilder("");
 
